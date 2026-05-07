@@ -1,0 +1,22 @@
+.DS_Store
+node_modules/
+tmp/
+client/dist/
+dist/
+build/
+.env
+.databricks/
+.smoke-test/
+test-results/
+playwright-report/
+
+# Auto-generated types (endpoint-specific, varies per developer)
+shared/appkit-types/serving.d.ts
+
+# Lock files (may contain internal corporate registry / proxy URLs)
+package-lock.json
+npm-shrinkwrap.json
+yarn.lock
+pnpm-lock.yaml
+bun.lockb
+bun.lock

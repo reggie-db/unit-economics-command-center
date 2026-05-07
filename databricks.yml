@@ -1,0 +1,19 @@
+bundle:
+  name: unit-econ-command-center
+
+resources:
+  apps:
+    app:
+      name: "unit-econ-command-center"
+      description: "Unit Economics Command Center - governed operating view across
+        brands, markets, and stores."
+      source_code_path: ./
+      # Uncomment to enable on behalf of user API scopes. Available scopes: sql, dashboards.genie, files.files, serving.serving-endpoints
+      # user_api_scopes:
+      #   - sql
+
+targets:
+  default:
+    default: true
+    workspace:
+      host: https://adb-7405612148043847.7.azuredatabricks.net

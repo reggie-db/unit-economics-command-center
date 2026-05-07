@@ -1,0 +1,58 @@
+@import "@databricks/appkit-ui/styles.css";
+
+/*
+ * Brand theme overrides.
+ *
+ * The brand red drives the primary accent: sidebar logo block, active nav
+ * state, primary buttons, focus rings. Data-viz colors (sparklines, driver
+ * bars, status badges) keep their semantic green/red so charts stay
+ * legible. The app is pinned to light mode for a consistent look.
+ */
+
+:root {
+  color-scheme: light;
+
+  --brand-red: oklch(0.55 0.196 25);
+  --brand-red-dark: oklch(0.46 0.17 25);
+  --brand-red-soft: oklch(0.96 0.02 25);
+
+  --primary: var(--brand-red);
+  --primary-foreground: oklch(1 0 0);
+  --ring: var(--brand-red);
+
+  --sidebar-primary: var(--brand-red);
+  --sidebar-primary-foreground: oklch(1 0 0);
+  --sidebar-ring: var(--brand-red);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: light;
+
+    --background: oklch(1 0 0);
+    --foreground: oklch(0.141 0.005 285.823);
+    --card: oklch(1 0 0);
+    --card-foreground: oklch(0.141 0.005 285.823);
+    --popover: oklch(1 0 0);
+    --popover-foreground: oklch(0.141 0.005 285.823);
+    --primary: var(--brand-red);
+    --primary-foreground: oklch(1 0 0);
+    --secondary: oklch(0.967 0.001 286.375);
+    --secondary-foreground: oklch(0.21 0.006 285.885);
+    --muted: oklch(0.967 0.001 286.375);
+    --muted-foreground: oklch(0.552 0.016 285.938);
+    --accent: oklch(0.967 0.001 286.375);
+    --accent-foreground: oklch(0.21 0.006 285.885);
+    --border: oklch(0.92 0.004 286.32);
+    --input: oklch(0.92 0.004 286.32);
+    --ring: var(--brand-red);
+    --sidebar: oklch(0.985 0 0);
+    --sidebar-foreground: oklch(0.141 0.005 285.823);
+    --sidebar-primary: var(--brand-red);
+    --sidebar-primary-foreground: oklch(1 0 0);
+    --sidebar-accent: oklch(0.967 0.001 286.375);
+    --sidebar-accent-foreground: oklch(0.21 0.006 285.885);
+    --sidebar-border: oklch(0.92 0.004 286.32);
+    --sidebar-ring: var(--brand-red);
+  }
+}
